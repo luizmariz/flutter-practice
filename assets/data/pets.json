@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Sparky",
+    "breed": "Golden Retriever",
+    "imgUrl":
+        "https://www.pngall.com/wp-content/uploads/4/Golden-Retriever-Puppy-PNG-Download-Image.png",
+    "kind": "dog",
+    "genre": "female",
+    "age": "8 months old",
+    "distance": 2.5
+  },
+  {
+    "name": "Charlie",
+    "breed": "Boston Terrier",
+    "imgUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR25OVBKobKBQ4EYPXM2tnsv7TG7wiHTvjy15tVJfplESKmPxtpcLutSIqdoDSWK5tFUG0&usqp=CAU",
+    "kind": "dog",
+    "genre": "male",
+    "age": "1.5 years old",
+    "distance": 2.6
+  },
+  {
+    "name": "Max",
+    "breed": "Siberian Husky",
+    "imgUrl":
+        "https://www.pngmart.com/files/8/Husky-PNG-Clipart-Background.png",
+    "kind": "dog",
+    "genre": "male",
+    "age": "1 year old",
+    "distance": 2.9
+  },
+  {
+    "name": "Dayse",
+    "breed": "Maltese",
+    "imgUrl":
+        "https://img.freepik.com/fotos-premium/cachorro-maltes-sentado-sonhando-acordado-isolado-no-branco_191971-17967.jpg?w=2000",
+    "kind": "dog",
+    "genre": "female",
+    "age": "7 months old",
+    "distance": 3.1
+  }
+]

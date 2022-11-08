@@ -1,6 +1,18 @@
-enum PetKind { cat, dog }
+enum PetKind {
+  cat,
+  dog;
 
-enum PetGenre { male, female }
+  static PetKind fromJson(String json) => values.byName(json);
+  String toJson() => name;
+}
+
+enum PetGenre {
+  female,
+  male;
+
+  static PetGenre fromJson(String json) => values.byName(json);
+  String toJson() => name;
+}
 
 class Pet {
   String? name;
@@ -30,12 +42,12 @@ class Pet {
     name = json['name'];
     breed = json['breed'];
     imgUrl = json['imgUrl'];
-    kind = json['kind'];
-    genre = json['genre'];
+    kind = PetKind.fromJson(json['kind'].toString());
+    genre = PetGenre.fromJson(json['genre'].toString());
     age = json['age'];
     distance = json['distance'];
     favorite = json['favorite'];
-    gallery = json['gallery'].cast<String>();
+    gallery = json['gallery']?.cast<String>();
     about = json['about'];
   }
 
@@ -45,8 +57,8 @@ class Pet {
     data['name'] = name;
     data['breed'] = breed;
     data['imgUrl'] = imgUrl;
-    data['kind'] = kind;
-    data['genre'] = genre;
+    data['kind'] = kind?.toJson();
+    data['genre'] = genre?.toJson();
     data['age'] = age;
     data['distance'] = distance;
     data['favorite'] = favorite;
